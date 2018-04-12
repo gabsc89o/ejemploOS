@@ -31,11 +31,11 @@
 }
 
 -(void) saltar{
-    NSLog(@"Mi nombre es %@ y estoy saltando", _nombre);
+    NSLog(@"Mi nombre es %@ y estoy saltando 😛", _nombre);
 }
 
 -(NSString *) getDatos{
-    NSString *str = [NSString stringWithFormat:@"Codigo:%d Telefono:%ld Nombre:%@ Direccion:%@ Activo:%hhd ",_codigo, _telefono, _nombre, _direccion, _activo ];
+    NSString *str = [NSString stringWithFormat:@"Codigo:%d Telefono:%ld Nombre:%@ Direccion:%@ Activo:%d ",_codigo, _telefono, _nombre, _direccion, _activo ];
     return str;
 }
 
