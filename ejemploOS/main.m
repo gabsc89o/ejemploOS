@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cliente.h"
+#import "cliente2.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -15,6 +16,11 @@ int main(int argc, const char * argv[]) {
         cliente *c1 = [[cliente alloc] init ];
         cliente *c2 = [[cliente alloc] initConCodigo:1 telefono:12345 letra:'b' activo:YES nombre:@"Gabriel" YDireccion:@"Mi casa" ];
         NSLog(@"%@", [c2 getDatos]);
+        cliente2 *cp = [[cliente2 alloc] init];
+        cp.nombre=@"Propiedad";
+        cp.codigo=5;
+        NSLog(@"Codigo: %d Nombre: %@",[cp codigo],cp.nombre);
+        
         [c1 setcodigo:2];
         [c1 settelefono:56789];
         [c1 setletra:'c'];
